@@ -4,5 +4,7 @@
         <span class="badge">{{entry.id}}</span> {{entry.name}}
     </li>
 </ul>
-
-<app-hero-details [hero]="selectedHero"></app-hero-details>
+<div *ngIf="selectedHero">
+    <h2>{{selectedHero.name | uppercase}} is my hero</h2>
+    <button (click)="goToDetail()">View Details</button>
+</div>
