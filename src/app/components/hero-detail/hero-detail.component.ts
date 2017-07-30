@@ -9,7 +9,8 @@ import { Hero } from '../../objects/hero';
 
 @Component({
   selector: 'app-hero-details',
-  templateUrl: './hero-detail.component.html'
+  templateUrl: './hero-detail.component.html',
+  styleUrls: [ './hero-detail.components.css' ],
 })
 export class HeroDetailComponent implements OnInit {
   @Input() hero: Hero;
